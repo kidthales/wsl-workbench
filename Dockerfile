@@ -72,7 +72,9 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
     make \
     pkg-config \
     psmisc \
+    unzip \
     wget \
+    zip \
     && \
     # Append to .profile
     echo $'\n# start ssh-agent if not running\neval $(keychain --eval --agents ssh id_rsa)' >> /home/"${user}"/.profile
@@ -93,7 +95,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
     apt-get update -y && DEBIAN_FRONTEND=noninteractive apt-get install -y \
     php${php_version} \
     php${php_version}-cli \
-    php${php_version}-{bz2,curl,dom,intl,mbstring,simplexml,xml} \
+    php${php_version}-{bz2,curl,dom,intl,mbstring,simplexml,xml,zip} \
     symfony-cli \
     && \
     # Append to .profile
