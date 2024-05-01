@@ -1,0 +1,8 @@
+.git
+dist
+.dockerignore
+.editorconfig
+.gitignore
+Dockerfile
+README.md
+workbench.ps1
