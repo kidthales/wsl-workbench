@@ -4,9 +4,9 @@ ARG user=non-root
 ARG wsl_name=workbench
 ARG wsl_automount=/mnt
 
-ARG nvm_version=0.39.7
-ARG nodejs_version=20
-ARG php_version=8.3
+ARG nvm_version=0.40.3
+ARG nodejs_version=22
+ARG php_version=8.4
 
 WORKDIR /tmp
 
